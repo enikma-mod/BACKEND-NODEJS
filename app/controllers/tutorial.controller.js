@@ -21,7 +21,7 @@ exports.create = (req, res) => {
         .save(tutorial)
         .then(data => {
             // res.send(data);
-            res.data("Successfully Posted!");
+            res.send("Successfully Posted!");
         })
         .catch(err => {
             res.status(500).send({
